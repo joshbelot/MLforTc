@@ -266,6 +266,8 @@ def filterTC(data):
         if i[1] > 600:
             newdata.append(i)
 
+    print(len(newdata), " compounds above 600K")
+
     return newdata
 
 
@@ -328,7 +330,7 @@ def save_data():
         write.writerows(d)
 
 
-save_data()
+removeDuplicates()
 
 
 
